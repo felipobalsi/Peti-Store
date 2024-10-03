@@ -1,0 +1,34 @@
+body {
+    background-color: black; 
+    color: gold; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+ 
+  p {
+    font-size: 24px;
+  }
+  
+  a:visited {
+    color: rgb(168, 0, 0); /* Cor do link após ser visitado */
+  }
+
+
+  a:hover {
+    color: rgb(168, 0, 0); /* Cor do link ao passar o mouse */
+  }
+  body {
+    font-family: Arial, sans-serif; /* Fonte padrão para toda a página */
+  }
+  
+  a {
+    font-size: 23px; /* Tamanho padrão para links */
+  }

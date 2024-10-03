@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pagina de vendas.css">
+</head>
+<body>
+    
+<br>
+
+
+    <header>
+        <h1>Peti.store - Página de Venda</h1>
+    </header>
+
+    <div>
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a>
+        <a href="add-produto.html">Adicionar Produto</a>
+        <a href="funcionarios.html">Funcionários</a>
+        <a href="pagina de vendas.html">Pagina de vendas</a>
+        <a href="histórico de vendas.html">Histórico de vendas</a>
+     </div>
+
+
+    <main>
+        <section>
+            <h2>Adicionar Produtos</h2>
+           
+            <form id="formVenda" role="form">
+                <div>
+                    <label for="produto">Produto:</label>
+                <select id="produto">
+                    <option value="" disabled selected>Escolha um produto</option>
+                    <option value="Camisa armani">Camisa armani</option>
+                    <option value="Camisa polo Burberry">Camisa polo Burberry</option>
+                    <option value="Camisa polo Disel">Camisa polo Disel</option>
+                    <option value="Bermuda quicksilver">Bermuda quicksilver</option>
+                    <option value="Bone quicksilver">Bone quicksilver</option>
+                    <option value="Camiseta quicksilver">Camiseta quicksilver</option>
+                     <option value="Conjunto Nike">Conjunto Nike</option>
+
+                </select>
+                        
+                    </select>
+                </div>
+                <div>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" required aria-required="true">
+                </div>
+                <div>
+                    <label for="preco">Preço:</label>
+                    <input type="number" id="preco" name="preco" step="0.01">
+                </div>
+                <div>
+                    <label for="pagamento">Forma de Pagamento:</label>
+                    <select id="pagamento" name="pagamento" required aria-required="true">
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="cartao">Cartão</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="adicionarProduto()">Adicionar Produto</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de Produtos</h2>
+            <ul id="listaProdutos"></ul>
+        </section>
+
+        <button type="button" onclick="finalizarVenda()">Finalizar Venda</button>
+    </main>
+
+<br>
+<br>
+
+
+
+
+
+
+    
+</body>
+</html>

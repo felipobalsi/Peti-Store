@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Vendas - Petystory</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="historico.css">
+</head>
+<body>
+    
+    <body>
+    
+        <header>
+            <h1>Histórico de Vendas - Peti.store</h1>
+            <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="ctrl-estoque.html">Controle de Estoque</a>
+            <a href="add-produto.html">Adicionar Produto</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="pagina de vendas.html">Pagina de vendas</a>
+ 
+                            
+                <a href="pagina de vendas.html">Página de Vendas</a>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Lista de Vendas</h2>
+    
+            
+            <div>
+                <label input ="dataSelecionada">Escreva a Data:</label>
+                <input type="text" id="dataSelecionada" placeholder="dataSelecionada">
+            </div>
+    
+            
+            <ul id="listaVendas"></ul>
+    
+           
+            <div>
+                <h3>Adicionar Nova Venda</h3>
+    
+              
+                <label for="produto">Produto:</label>
+                <select id="produto">
+                    <option value="" disabled selected>Escolha um produto</option>
+                    <option value="Camisa armani">Camisa armani</option>
+                    <option value="Camisa polo Burberry">Camisa polo Burberry</option>
+                    <option value="Camisa polo Disel">Camisa polo Disel</option>
+                    <option value="Bermuda quicksilver">Bermuda quicksilver</option>
+                    <option value="Bone quicksilver">Bone quicksilver</option>
+                    <option value="Camiseta quicksilver">Camiseta quicksilver</option>
+                     <option value="Conjunto Nike">Conjunto Nike</option>
+
+                </select>
+    
+                
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" placeholder="Quantidade" min="1"> 
+    
+                
+                <label for="pagamento">Método de Pagamento:</label>
+                <select id="pagamento">
+                    <option value="" disabled selected>Escolha o método de pagamento</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Cartão">Cartão</option>
+                </select>
+    
+                
+                <label for="nomeVendedor">Nome do Vendedor:</label>
+                <input type="text" id="nomeVendedor" placeholder="Nome do Vendedor">
+    
+                
+                <button onclick="adicionarProduto()">Adicionar Venda</button>
+            </div>
+    
+        </main>
+    
+        
+</body>
+</html>
